@@ -1,0 +1,34 @@
+#board li {
+    width: calc(33.3333333% - 3px);
+    aspect-ratio: 1;
+}
+
+#board li svg {
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 1rem;
+}
+
+#board {
+    aspect-ratio: 1;
+}
+
+.container {
+    max-width: 17rem !important;
+}
+
+.btn-primary {
+    background-color: #ffa3a3 !important;
+    color: white !important;
+    font-weight: 600;
+    border: 0 !important;
+}
+
+.bg-red {
+    background-color: #ffa3a3;
+}
+
+.bg-pink {
+    background-color: #ffcccc;
+}
