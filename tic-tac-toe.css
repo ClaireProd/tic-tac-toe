@@ -1,21 +1,48 @@
-#board li {
-    width: calc(33.3333333% - 3px);
-    aspect-ratio: 1;
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playwrite FR Moderne', sans-serif;
+    font-size: 1rem;
 }
 
-#board li svg {
+.case {
+    position: relative;
     width: 100%;
-    height: 100%;
-    color: white;
-    padding: 1rem;
+    padding-top: 100%; /* Ensures a 1:1 aspect ratio */
+    background: #ffcccc; /* Background color for empty cells */
+}
+
+.case svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    margin: 1rem;
 }
 
 #board {
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: .25rem; 
+    width: 100%;
+    max-width: 300px;
     aspect-ratio: 1;
+    padding: 0;
 }
 
-.container {
-    max-width: 17rem !important;
+.btn {
+    border: .1rem solid #ffa3a3;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color: #ffa3a3;
 }
 
 .btn-primary {
@@ -36,3 +63,31 @@
 body {
     background-color: #f9efef !important;
 }
+
+.game {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    max-width: 300px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.my-5 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 310px) {
+    .game {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        max-width: 100%;
+    }
+
+    .my-5 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+

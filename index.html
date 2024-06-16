@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html class="h-100">
-    <head>
-        <title>TIC-TAC-TOE</title>
-        <link rel="stylesheet" type="text/css" href="tic-tac-toe.css">
-        <link rel="stylesheet" type="text/css"
-            href="bootstrap.min.css">
-    </head>
-    <body
-        class="d-flex justify-content-center align-items-center h-100 text-center">
-        <div class="container">
-            <h1>TIC-TAC-TOE</h1>
-            <button type="reset" id="restart" class="btn btn-primary bg-pink mt-3" accesskey="r">Restart</button>
-            <ul class="list-unstyled d-flex gap-1 flex-wrap m-3" id="board">
-                <li id="0" class="case bg-red"></li>
-                <li id="1" class="case bg-pink"></li>
-                <li id="2" class="case bg-red"></li>
-                <li id="3" class="case bg-pink"></li>
-                <li id="4" class="case bg-red"></li>
-                <li id="5" class="case bg-pink"></li>
-                <li id="6" class="case bg-red"></li>
-                <li id="7" class="case bg-pink"></li>
-                <li id="8" class="case bg-red"></li>
-            </ul>
-            <div id="score"></div>
-        </div>
-        <script src="bootstrap.min.js"></script>
-        <script src="tic-tac-toe.js"></script>
-    </body>
+  <head>
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" type="text/css" href="tic-tac-toe.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="game">
+      <div>
+        <h1>Tic-tac-toe</h1>
+        <button
+          type="reset"
+          id="restart"
+          class="btn btn-primary bg-pink mt-3"
+          accesskey="r"
+        >
+          Restart
+        </button>
+        <ul class="my-5" id="board">
+          <li id="0" class="case bg-red"></li>
+          <li id="1" class="case bg-pink"></li>
+          <li id="2" class="case bg-red"></li>
+          <li id="3" class="case bg-pink"></li>
+          <li id="4" class="case bg-red"></li>
+          <li id="5" class="case bg-pink"></li>
+          <li id="6" class="case bg-red"></li>
+          <li id="7" class="case bg-pink"></li>
+          <li id="8" class="case bg-red"></li>
+        </ul>
+        <div id="score"></div>
+      </div>
+    </div>
+    <script src="tic-tac-toe.js"></script>
+  </body>
 </html>
